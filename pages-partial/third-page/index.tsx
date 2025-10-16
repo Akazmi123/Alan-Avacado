@@ -5,7 +5,7 @@ export const ThirdPage = () => {
     <div className="w-full h-[100vh] relative">
       <div className="absolute left-0 bottom-0 z-[-1] w-[400px]">
         <div className="relative w-full bg-black">
-          <div className="bg-[#CADBB7] w-full h-[50vh]"></div>
+          <div className="bg-[#CADBB7] w-full min-w-[20vw] h-[50vh]"></div>
           <Image
             src={"/avocado.png"}
             alt="banner"
@@ -16,12 +16,12 @@ export const ThirdPage = () => {
         </div>
       </div>{" "}
       <div className="absolute left-10 bottom-20 z-[-1] w-[90%] flex justify-start items-end">
-        <div className="text-[60px] playfair-italic text-[#3C210E]">
+        <div className="text-[8vh] playfair-italic text-[#3C210E]">
           A Second
           <br /> Chance for <br />
           the Fruit
         </div>
-        <div className="w-[40%] text-[#7B695A] ml-[200px] mb-[30px]">
+        <div className="w-[30vw] text-[#7B695A] mb-[10vh] ml-[20%] text-[2.3vh]">
           <span className="opacity-0">fffffff</span>Not all avocados make it to
           market. Many are rejected for their size or shape: too big, too small,
           or simply with “character.” Yet their taste and nutritional value
@@ -31,15 +31,13 @@ export const ThirdPage = () => {
           <span className="opacity-0">fffffff</span>This is how our project
           began — turning these avocados into cold-pressed oil.
         </div>
-        <Image src={"/smallTree.png"} alt="banner" width={200} height={200} />
+        <div className="absolute right-[1vw] top-[1vw] w-[13vw] h-[35vh]">
+          <Image src={"/smallTree.png"} alt="banner" fill />
+        </div>
       </div>
-      <Image
-        src={"/bigTree.png"}
-        alt="banner"
-        width={700}
-        height={700}
-        className="absolute top-0 right-10"
-      />
+      <div className="absolute top-0 right-10 w-[40vw] h-[50vh]">
+        <Image src={"/bigTree.png"} alt="banner" fill />
+      </div>
     </div>
   );
 };

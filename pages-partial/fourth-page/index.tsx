@@ -4,35 +4,34 @@ export const FourthPage = () => {
   return (
     <div className="w-full h-[100vh] relative">
       <div className="w-[90%] flex justify-between items-center p-10">
-        <div className="w-[400px]">
-          <div className="text-[28px] playfair-italic text-[#3C210E] uppercase">
+        <div className="w-[22vw]">
+          <div className="text-[1.5vw] playfair-italic text-[#3C210E] uppercase">
             Company <br />
             fact
           </div>
-          <div className="text-[#7B695A] text-[20px] playfair-italic">
+          <div className="text-[#7B695A] text-[1.2vw] playfair-italic">
             {" "}
             <span className="opacity-0">fffffff</span>The idea of producing oil
             was originally born as a way to fight food waste — and over time, it
             became the brand’s main direction.
           </div>
           <br />
-          <div>_____________</div>
+          <div>------------</div>
           <br />
-          <div className="text-[#7B695A] text-[20px] playfair-italic">
+          <div className="text-[#7B695A] text-[1.2vw] playfair-italic">
             {" "}
             <span className="opacity-0">fffffff</span>Processing “imperfect”
             avocados helps reduce waste and makes the process more sustainable.
           </div>
         </div>
-        <div className="w-[300px] pr-10 pt-[200px] text-[#7B695A] playfair-italic">
+        <div className="w-[20vw] pr-10 pt-[15vh] text-[1.2vw] text-[#7B695A] playfair-italic">
           {" "}
           Avocado oil is rich in mono- and polyunsaturated fats that are
           beneficial for heart health.
         </div>
       </div>
-      <div className="w-[100%] flex justify-center items-center p-10">
-        <div className="w-[400px] text-[#7B695A] text-[16px]">
-          {" "}
+      <div className="w-full flex justify-center items-center">
+        <div className="w-[26vw] pt-[15vh] text-[#7B695A] text-[1vw]">
           <span className="opacity-0">fffffff</span>Production begins with
           careful preparation: we use only fresh avocados harvested at peak
           ripeness. The fruits are then pressed at low temperatures — a process
@@ -45,34 +44,22 @@ export const FourthPage = () => {
         </div>
       </div>
       <div className="bg-[#E5F0F3] w-[30%] h-[55vh] absolute top-0 left-[45%] -translate-x-1/2 flex justify-center items-center">
-        <div className="w-full px-20 text-[55px] playfair-italic text-[#3C210E]">
+        <div className="w-full px-10 text-[4vw] playfair-italic text-[#3C210E]">
           Cold <br />
           Pressing: <br />
           The Art of <br />
           Care
         </div>
       </div>
-      <Image
-        src={"/flowerArt.svg"}
-        alt="banner"
-        width={400}
-        height={400}
-        className="absolute bottom-0 left-10"
-      />
-      <Image
-        src={"/leaveArt.svg"}
-        alt="banner"
-        width={400}
-        height={400}
-        className="absolute bottom-0 right-10"
-      />
-      <Image
-        src={"/splashArt.svg"}
-        alt="banner"
-        width={550}
-        height={550}
-        className="absolute top-0 right-10 z-[-1]"
-      />
+      <div className="absolute bottom-0 left-[2vw] z-[-1] w-[30vw] h-[50vh]">
+        <Image src={"/flowerArt.svg"} alt="banner" fill />
+      </div>
+      <div className="absolute bottom-0 right-10 z-[-1] w-[30vw] h-[50vh]">
+        <Image src={"/leaveArt.svg"} alt="banner" fill />
+      </div>
+      <div className="absolute top-0 right-[2vw] z-[-1] w-[40vw] h-[50vh]">
+        <Image src={"/splashArt.svg"} alt="banner" fill />
+      </div>
     </div>
   );
 };

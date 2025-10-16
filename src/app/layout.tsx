@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display } from 'next/font/google'
-import { Proza_Libre } from 'next/font/google'
-
+import { Playfair_Display } from "next/font/google";
+import { Proza_Libre } from "next/font/google";
 
 const playfairDisplay = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-  style: ['normal', 'italic']
-})
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+  style: ["normal", "italic"],
+  weight: ["400", "600"],
+});
 
 const prozaLibre = Proza_Libre({
-  subsets: ['latin'],
-  variable: '--font-proza',
-  display: 'swap',
-  weight: "400"
-})
+  subsets: ["latin"],
+  variable: "--font-proza",
+  display: "swap",
+  style: ["normal", "italic"],
+  weight: ["400", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",

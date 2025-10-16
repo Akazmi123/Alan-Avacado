@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --font-playfair: 'Playfair Display', serif;
-  --font-proza: 'Proza Libre', sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-proza: "Proza Libre", sans-serif;
 }
 
 .playfair {
   font-family: var(--font-playfair);
 }
+
+.playfair-bold {
+  font-family: var(--font-playfair);
+  font-weight: 600;
+}
+
 .playfair-italic {
   font-family: var(--font-playfair);
   font-style: italic;
@@ -17,6 +23,21 @@
   font-family: var(--font-proza);
 }
 
-body{
+.proza-bold {
+  font-family: var(--font-proza);
+  font-weight: 600;
+}
+
+.proza-italic {
+  font-family: var(--font-proza);
+  font-style: italic;
+}
+
+.proza {
+  font-family: var(--font-proza);
+}
+
+body {
   font-family: var(--font-playfair);
+  background: #fbfbfb;
 }

@@ -188,12 +188,6 @@ export default function Home() {
           <FourthPage />
         </section>
         <section className="min-w-[100vw] h-[100vh] snap-start">
-          <ThirdPage />
-        </section>
-        <section className="min-w-[100vw] h-[100vh] snap-start">
-          <FourthPage />
-        </section>
-        <section className="min-w-[100vw] h-[100vh] snap-start">
           <FifthPage />
         </section>
         <section className="min-w-[100vw] h-[100vh] snap-start">

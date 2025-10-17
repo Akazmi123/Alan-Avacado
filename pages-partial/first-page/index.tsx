@@ -3,39 +3,44 @@ import Image from "next/image";
 export const HomePage = () => {
   return (
     <>
-      <div className="w-full h-[100vh] flex flex-col justify-between items-center pl-[5%] relative">
-        <Image
-          src={"/topBanner.svg"}
-          alt="banner"
-          width={150}
-          height={150}
-          className="absolute absolute left-1/2 top-0 -translate-x-1/2"
-        />
-        <div className="w-full flex justify-between items-center mt-[40px]">
-          <div className="text-[#3C210E] text-[18px]">
+      <div className="w-full h-[100vh] flex flex-col xs:justify-between justify-start items-center xs:pl-[5%] relative">
+        <div className="absolute left-1/2 xs:block hidden top-0 w-[20vh] h-[10vh] -translate-x-1/2">
+          <Image src={"/topBanner.svg"} alt="banner" fill />
+        </div>
+        <div className="w-full flex justify-between xs:border-none border-b-1 items-center xs:mt-[40px] py-2 px-[5%] xs:px-0">
+          <div className="text-[#3C210E] text-[3vw] xs:text-[18px]">
             Southern Forests <br /> Food Technology
           </div>
-          <div className="text-[#3C210E] text-[18px] rounded-[100px] px-5 py-1">
+          <div className="text-[#3C210E] text-[3vw] xs:text-[18px] rounded-[100px] px-5 py-1 xs:border-none border border-[#3C210E] rounded-full">
             Contact Us
           </div>
         </div>
-        <div className="w-full flex justify-center items-center ml-[-40px]">
-          <div className="w-[70vw] max-w-[800px] relative flex justify-between items-start">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vh]">
+        <div className="relative xs:hidden flex justify-center items-center text-[10px] gap-5 xs:pb-10 pt-2 text-[#3C210E]">
+          <div>Main</div>
+          <div className="opacity-[0.5]">Our Home Amid the Forests</div>
+          <div className="absolute bottom-1 translate-y-[100%] left-1/2 xs:hidden block w-[10vh] h-[10vh] -translate-x-1/2">
+            <Image src={"/topBanner.svg"} alt="banner" fill />
+          </div>
+        </div>
+        <div className="w-full flex justify-center items-center px-[15px] xs:ml-[-40px]">
+          <div className="xs:w-[70vw] w-full xs:max-w-[800px] lg:max-w-[1440px] relative xs:h-full h-[80vh] flex justify-between items-start">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full w-[150vw] xs:w-[50vw] h-[90vh] xs:h-[50vh]">
               <Image src={"/flower.svg"} alt="banner" fill />
             </div>
             <div>
-              <div className="playfair-italic text-[10vh] text-[#3C210E] pt-10">
+              <div className="playfair-italic xs:text-[10vh] text-[8vw] text-[#3C210E] pt-26 xs:pt-10 xs:leading-20 leading-8 lg:leading-30">
                 Southern <br /> forests
               </div>
-              <div>Est. 2007</div>
+              <div className="proza text-[#86796F] xs:text-[2vh] text-[3vw] xs:leading-10 lg:leading-20">
+                Est. 2007
+              </div>
             </div>
-            <div className="playfair-italic text-[10vh] text-[#3C210E] pt-42">
+            <div className="playfair-italic xs:text-[10vh] text-[8vw] text-[#3C210E] pt-[60vh] xs:pt-42 xs:text-left text-right xs:leading-20 leading-8 lg:leading-30">
               Avocado <br /> oil
             </div>
           </div>
         </div>
-        <div className="ml-[-40px] flex justify-center items-center gap-4">
+        <div className="xs:static absolute bottom-10 xs:ml-[-40px] flex justify-center items-end xs:items-center gap-4 text-[#86796F] proza">
           <div>250ml</div>
           <Image
             src={"/line.svg"}
@@ -43,14 +48,19 @@ export const HomePage = () => {
             width={60}
             height={20}
             color="#86796F"
-            className="mb-[-4px]"
+            className="mb-[10px] xs:mb-[0px]"
           />
           <div>750ml</div>
         </div>
-        <div className="w-full flex justify-start items-center mb-[-40px]">
-          <Image src={"/badge.svg"} alt="banner" width={80} height={80} />
+        <div className="xs:static absolute left-6 bottom-[15vh] w-full flex justify-start items-center xs:mb-[-40px]">
+          <Image
+            src={"/badge.svg"}
+            alt="banner"
+            width={window.innerWidth > 950 ? 80 : 60}
+            height={window.innerWidth > 950 ? 80 : 60}
+          />
         </div>
-        <div className="flex justify-center items-center gap-5 pb-10 text-[#3C210E]">
+        <div className="xs:flex hidden justify-center items-center gap-5 pb-10 text-[#3C210E]">
           <div>Main</div>
           <div className="opacity-[0.5]">Our Home Amid the Forests</div>
           <div className="opacity-[0.5]">Second Chance for the Fruit</div>

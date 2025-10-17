@@ -19,6 +19,8 @@ export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    if (window.innerWidth <= 950) return; // Skip if screen is too small
+
     const container = containerRef.current;
     if (!container) return;
 
@@ -171,7 +173,7 @@ export default function Home() {
     <>
       <div
         ref={containerRef}
-        className="flex w-[100vw] h-[100vh] overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth"
+        className="xs:flex w-[100vw] h-[100vh] xs:overflow-x-auto overflow-x-hidden xs:overflow-y-hidden snap-x snap-mandatory scroll-smooth"
         tabIndex={0}
         aria-label="Horizontal sections container"
       >

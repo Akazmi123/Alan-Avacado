@@ -41,3 +41,8 @@ body {
   font-family: var(--font-playfair);
   background: #fbfbfb;
 }
+
+@theme {
+  --breakpoint-xs: 950px;
+  --breakpoint-lg: 2000px;
+}

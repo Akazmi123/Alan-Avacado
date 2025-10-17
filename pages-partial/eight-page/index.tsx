@@ -10,8 +10,8 @@ export const EighthPage = () => {
         height={500}
         className="absolute left-70 bottom-0 z-[-10]"
       />
-      <div className="absolute left-[50%] -translate-x-1/2 top-0 z-[1]">
-        <Image src={"/vegSpray.png"} alt="banner" width={500} height={500} />
+      <div className="absolute left-[50%] w-[40vw] h-[50vh] -translate-x-1/2 top-0 z-[1]">
+        <Image src={"/vegSpray.png"} alt="banner" fill />
         <div className="w-[350px] mt-[40px] text-[12px] proza text-[#7B695A]">
           {" "}
           <span className="opacity-0">fffffff</span> The finished product is
@@ -21,12 +21,11 @@ export const EighthPage = () => {
         </div>
       </div>
       <div className="bg-[#CADBB7] w-[360px] h-[90vh] absolute left-10 bottom-0 z-[-1]">
-        <div className="w-full h-full relative flex justify-center items-end">
+        <div className="w-[40vw] h-[40vh] relative flex justify-center items-end">
           <Image
             src={"/vegSplash.png"}
             alt="banner"
-            width={400}
-            height={400}
+            fill
             className="absolute top-0 right-20 translate-x-1/2 -translate-y-[30px]"
           />
 
@@ -37,12 +36,12 @@ export const EighthPage = () => {
           </div>
         </div>
       </div>
-      <div className="absolute right-10 bottom-0 z-[1]">
-        <div className="mb-50 ml-10">
-          <div className="w-full text-[20px] playfair-italic text-[#3C210E] uppercase">
+      <div className="absolute  right-[0] bottom-0 z-[1]">
+        <div className="mb-50">
+          <div className="w-full text-[2.2vh] playfair-italic text-[#3C210E] uppercase">
             Interesting
           </div>
-          <div className="w-[300px] mt-[10px] text-[12px] proza text-[#7B695A]">
+          <div className="w-[300px] mt-[10px] text-[1.5vh]  proza text-[#7B695A]">
             {" "}
             <span className="opacity-0">fffffff</span> Many of our customers say
             that after trying avocado oil once, they no longer return to olive

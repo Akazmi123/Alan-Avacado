@@ -20,11 +20,11 @@ export const HomePage = () => {
           </div>
         </div>
         <div className="w-full flex justify-center items-center ml-[-40px]">
-          <div className="w-[70vw] relative flex justify-between items-start">
+          <div className="w-[70vw] max-w-[800px] relative flex justify-between items-start">
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vh]">
               <Image src={"/flower.svg"} alt="banner" fill />
             </div>
-            <div className="w-[50vw]">
+            <div>
               <div className="playfair-italic text-[10vh] text-[#3C210E] pt-10">
                 Southern <br /> forests
               </div>

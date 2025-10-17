@@ -50,7 +50,7 @@ export const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="xs:static absolute bottom-10 xs:ml-[-40px] flex justify-center items-end xs:items-center gap-4 text-[#86796F] proza">
+        <div className="xs:static absolute bottom-20 xs:ml-[-40px] flex justify-center items-end xs:items-center gap-4 text-[#86796F] proza">
           <div>250ml</div>
           <Image
             src={"/line.svg"}

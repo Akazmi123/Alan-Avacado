@@ -180,10 +180,10 @@ export default function Home() {
         <section className="min-w-[100vw] h-[100vh] snap-start">
           <HomePage />
         </section>
-        <section className="min-w-[100vw] h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
           <SecondPage />
         </section>
-        <section className="min-w-[100vw] h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh] h-[130vh] snap-start">
           <ThirdPage />
         </section>
         <section className="min-w-[100vw] h-[100vh] snap-start">

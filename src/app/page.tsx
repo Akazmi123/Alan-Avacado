@@ -19,7 +19,7 @@ export default function Home() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (window.innerWidth <= 950) return; // Skip if screen is too small
+    if (typeof window !== "undefined" && window.innerWidth <= 950) return; // Skip if screen is too small
 
     const container = containerRef.current;
     if (!container) return;

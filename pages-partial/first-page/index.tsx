@@ -1,6 +1,16 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export const HomePage = () => {
+  const [image, setImage] = useState(80);
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.innerWidth > 950) {
+      setImage(80);
+    } else {
+      setImage(60);
+    }
+  }, []);
   return (
     <>
       <div className="w-full h-[100vh] flex flex-col xs:justify-between justify-start items-center xs:pl-[5%] relative">
@@ -53,12 +63,7 @@ export const HomePage = () => {
           <div>750ml</div>
         </div>
         <div className="xs:static absolute left-6 bottom-[15vh] w-full flex justify-start items-center xs:mb-[-40px]">
-          <Image
-            src={"/badge.svg"}
-            alt="banner"
-            width={window.innerWidth > 950 ? 80 : 60}
-            height={window.innerWidth > 950 ? 80 : 60}
-          />
+          <Image src={"/badge.svg"} alt="banner" width={image} height={image} />
         </div>
         <div className="xs:flex hidden justify-center items-center gap-5 pb-10 text-[#3C210E]">
           <div>Main</div>

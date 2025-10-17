@@ -3,16 +3,15 @@ import Image from "next/image";
 export const EighthPage = () => {
   return (
     <div className="w-full h-[100vh] relative">
-      <Image
-        src={"/vegFlower.png"}
-        alt="banner"
-        width={500}
-        height={500}
-        className="absolute left-70 bottom-0 z-[-10]"
-      />
+      <div className="absolute left-70 bottom-0 z-[-10] w-[40vw] h-[40vh]">
+        <Image src={"/vegFlower.png"} alt="banner" fill />
+      </div>
       <div className="absolute left-[50%] w-[40vw] h-[50vh] -translate-x-1/2 top-0 z-[1]">
-        <Image src={"/vegSpray.png"} alt="banner" fill />
-        <div className="w-[350px] mt-[40px] text-[12px] proza text-[#7B695A]">
+        {" "}
+        <div className="relative left-[8vw] top-0 z-[-10] w-[30vw] h-[40vh]">
+          <Image src={"/vegSpray.png"} alt="banner" fill />{" "}
+        </div>
+        <div className="w-[20vw] mt-[20vh] text-[2vh] proza text-[#7B695A]">
           {" "}
           <span className="opacity-0">fffffff</span> The finished product is
           universal: you can use it for salads, frying eggs and vegetables,
@@ -20,35 +19,34 @@ export const EighthPage = () => {
           — avocado oil easily replaces other oils in recipes.
         </div>
       </div>
-      <div className="bg-[#CADBB7] w-[360px] h-[90vh] absolute left-10 bottom-0 z-[-1]">
-        <div className="w-[40vw] h-[40vh] relative flex justify-center items-end">
-          <Image
-            src={"/vegSplash.png"}
-            alt="banner"
-            fill
-            className="absolute top-0 right-20 translate-x-1/2 -translate-y-[30px]"
-          />
+      <div className="bg-[#CADBB7] w-[24vw] h-[85vh] absolute left-10 bottom-0 z-[-1]">
+        <div className="w-[40vw] h-[50vh] relative flex justify-center items-end">
+          <div className="absolute top-0 right-20 translate-x-1/2 -translate-y-[30px] z-[-10] w-[40vw] h-[40vh]">
+            <Image src={"/vegSplash.png"} alt="banner" fill />{" "}
+          </div>
 
-          <div className="w-[60%] text-[60px] playfair-italic text-[#3C210E] pb-30">
+          <div className="w-full px-10 text-[5vw] playfair-italic text-[#3C210E] ">
             Oil for <br />
             Every
             <br /> Kitchen
           </div>
         </div>
       </div>
-      <div className="absolute  right-[0] bottom-0 z-[1]">
-        <div className="mb-50">
+      <div className="absolute  right-0 bottom-0 z-[1]">
+        <div className="mb-[35vh]">
           <div className="w-full text-[2.2vh] playfair-italic text-[#3C210E] uppercase">
             Interesting
           </div>
-          <div className="w-[300px] mt-[10px] text-[1.5vh]  proza text-[#7B695A]">
+          <div className="w-[25vw] mt-[10px] text-[1.5vh]  proza text-[#7B695A]">
             {" "}
             <span className="opacity-0">fffffff</span> Many of our customers say
             that after trying avocado oil once, they no longer return to olive
             oil in everyday cooking.
           </div>
+        </div>{" "}
+        <div className="relative right-[10vw] bottom-0 z-[-10] w-[30vw] h-[40vh]">
+          <Image src={"/vegBread.png"} alt="banner" fill />{" "}
         </div>
-        <Image src={"/vegBread.png"} alt="banner" width={450} height={450} />
       </div>
     </div>
   );

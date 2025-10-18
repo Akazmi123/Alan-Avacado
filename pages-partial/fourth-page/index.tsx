@@ -72,7 +72,7 @@ export const FourthPage = () => {
       </div>
 
       {/* Mobile view */}
-      <div className="w-full min-h-[300vh] relative xs:hidden block">
+      <div className="w-full relative xs:hidden block">
         <div className="w-[90%] flex justify-between items-center p-5">
           <div className="w-[50vw]">
             <div className="text-[5vw] playfair-italic text-[#3C210E] uppercase">

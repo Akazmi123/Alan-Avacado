@@ -3,7 +3,7 @@ import Image from "next/image";
 export const ThirtenthPage = () => {
   return (
     <>
-      <div className="w-full h-[100vh] relative flex justify-center items-center xs:block hidden">
+      <div className="w-full h-[100vh] relative justify-center items-center xs:flex  hidden">
         <div className="w-full max-w-[400px]">
           <div className="text-[20px] playfair-italic text-[#3C210E] text-center">
             Interested in stocking our product?

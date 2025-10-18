@@ -3,7 +3,7 @@ import Image from "next/image";
 export const SecondPage = () => {
   return (
     <>
-      <div className="w-full xs:h-[100vh] h-[160vh] relative">
+      <div className="w-full h-[100vh] relative xs:block hidden">
         <div className="bg-[#E5F0F3] xs:w-[360px] w-[80vw] xs:h-[90vh] h-[30vh] absolute left-0 xs:bottom-0 bottom-auto top-10 xs:top-auto z-[-1]"></div>
         <Image
           src={"/leaves.svg"}
@@ -41,9 +41,6 @@ export const SecondPage = () => {
             <div className="w-[30vw] h-[40vh] xs:block hidden">
               <Image src={"/viewLarge.png"} alt="banner" fill />
             </div>
-            <div className="w-[100vw] h-[40vh] xs:hidden block">
-              <Image src={"/viewLargeMob.png"} alt="banner" fill />
-            </div>
             <Image
               src={"/bannerDetail.png"}
               alt="banner"
@@ -68,6 +65,49 @@ export const SecondPage = () => {
             <div className="absolute right-0 top-0 translate-x-[100%] w-[50vw] h-[30vh] xs:hidden block">
               <Image src={"/viewSmall.png"} alt="banner" fill />
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile view */}
+      <div className="w-full xs:hidden block">
+        <div className="bg-[#E5F0F3] w-[80%]">
+          <div className="playfair-italic text-[34px] text-[#3C210E] p-6">
+            A Home <br />
+            Among the
+            <br />
+            Forests
+          </div>
+        </div>
+        <div className="w-[90%] m-auto mt-8 text-[#7B695A] mb-10">
+          <span className="opacity-0">ffffff</span>Our journey begins in
+          Southern Forests — a picturesque corner of Australia where tall trees
+          stand alongside well-kept farms. This region is known as the “food
+          bowl of the country,” and it is here that one of the largest avocado
+          harvests grows. The unique climate and fertile soil create the perfect
+          conditions for avocados to be rich in nutrients and flavor.
+        </div>
+        <div className="relative w-full h-[450px]">
+          <div className="absolute w-full h-[38px] flex justify-center bg-[#93A267] items-center top-0 left-0 z-[1]">
+            <div className="text-center playfair-italic text-white">
+              Southern Forests - Our Home
+            </div>
+          </div>
+          <Image src={"/viewLargeMob.png"} alt="banner" fill />
+        </div>
+        <div className="w-full flex mb-40">
+          <div className="relative p-4 mt-10 w-[60%]">
+            <div className="text-[#3C210E] text-[20px] uppercase playfair-italic">
+              Interesting fact
+            </div>
+            <div className="text-[#7B695A] text-[14px] proza-italic">
+              <span className="opacity-0">ffffff</span>Did you know? Southern
+              Forests produces thousands of tons of avocados every year, and
+              part of the harvest is used exclusively for oil.
+            </div>
+          </div>
+          <div className="relative w-[40%] h-[270px]">
+            <Image src={"/viewSmall.png"} alt="banner" fill />
           </div>
         </div>
       </div>

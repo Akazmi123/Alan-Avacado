@@ -140,12 +140,11 @@ export const FourthPage = () => {
           </div>
         </div>
 
-        <div className="relative top-[-50px] right-[2vw] z-[-1] w-[100vw] h-[50vh]">
+        <div className="relative top-[-50px] z-[-1] w-full h-[408px]">
           <Image src={"/splashArtMob.png"} alt="banner" fill />
         </div>
-        <div className="w-full">
+        <div className="w-full mb-10">
           <div className="w-[90%] mx-auto text-[20px] text-[#7B695A] proza">
-            {" "}
             Avocado oil is rich in mono- and polyunsaturated fats that are
             beneficial for heart health.
           </div>

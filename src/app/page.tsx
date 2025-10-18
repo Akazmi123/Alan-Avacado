@@ -183,16 +183,15 @@ export default function Home() {
         <section className="min-w-[100vw] xs:h-[100vh] snap-start">
           <SecondPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] h-[130vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
           <ThirdPage />
         </section>
-        <section className="min-w-[100vw] h-[240vh] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
           <FourthPage />
         </section>
-        <section className="min-w-[100vw] h-[200vh] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
           <FifthPage />
         </section>
-        {/* Using seperate templates */}
         <section className="min-w-[100vw] xs:h-[100vh] snap-start">
           <SixthPage />
         </section>

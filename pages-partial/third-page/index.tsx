@@ -88,6 +88,19 @@ export const ThirdPage = () => {
           height={200}
           className="absolute right-[2vw] top-0 z-[-1] -translate-y-1/2 z-[10]"
         />
+        <div className="w-[90%] m-auto mt-8 text-[#7B695A] mb-10">
+          <span className="opacity-0">fffffff</span>Not all avocados make it to
+          market. Many are rejected for their size or shape: too big, too small,
+          or simply with “character.” Yet their taste and nutritional value
+          remain unchanged. Instead of wasting this harvest, we decided to give
+          these fruits a new life.
+          <br />
+          <span className="opacity-0">fffffff</span>This is how our project
+          began — turning these avocados into cold-pressed oil.
+        </div>
+        <div className="w-full h-[399px] relative">
+          <Image src={"/mobAva.png"} alt="banner" fill />
+        </div>
       </div>
     </>
   );

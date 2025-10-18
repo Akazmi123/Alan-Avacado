@@ -79,14 +79,15 @@ export const EleventhPage = () => {
           modules={[Autoplay]}
           slidesPerView={1}
           autoplay={{ delay: 2000 }}
+          spaceBetween={20} 
           loop
-          className="w-full mx-auto rounded-lg p-5 mb-10 flex"
+          className="w-full rounded-xl !p-5 mb-10 flex"
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         >
           {[1, 2, 3].map((_, index) => (
             <SwiperSlide key={index}>
               <div
-                className="w-[90%] mx-auto rounded-lg p-5"
+                className="w-[98%] mx-auto rounded-xl p-5"
                 style={{
                   boxShadow: "0px 0px 25px 0px #81926E26",
                 }}

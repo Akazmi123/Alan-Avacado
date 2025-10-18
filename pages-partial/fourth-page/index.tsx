@@ -127,7 +127,7 @@ export const FourthPage = () => {
           </div>
         </div>
         <div className="w-full flex mt-[20px] justify-center items-center">
-          <div className="w-[90%] mx-auto text-[#7B695A] text-[20px] proza">
+          <div className="w-[90%] mx-auto text-[#7B695A] text-[16px] proza">
             <span className="opacity-0">fff</span>Production begins with careful
             preparation: we use only fresh avocados harvested at peak ripeness.
             The fruits are then pressed at low temperatures — a process that
@@ -144,7 +144,7 @@ export const FourthPage = () => {
           <Image src={"/splashArtMob.png"} alt="banner" fill />
         </div>
         <div className="w-full mb-10">
-          <div className="w-[90%] mx-auto text-[20px] text-[#7B695A] proza">
+          <div className="w-[90%] mx-auto text-[16px] text-[#7B695A] proza">
             Avocado oil is rich in mono- and polyunsaturated fats that are
             beneficial for heart health.
           </div>

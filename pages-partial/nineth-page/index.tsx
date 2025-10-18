@@ -51,13 +51,18 @@ export const NinethPage = () => {
 
       {/* Mobile view */}
       <div className="w-full xs:hidden block">
-        <div className="w-[90%] mx-auto proza text-[#7B695A] text-[18px] mb-10">
-          <div className="w-full text-[24px] playfair-italic text-[#3C210E] uppercase mb-2">
-            Fact
+        <div className="w-full mb-10 relative">
+          <div className="w-full mx-auto h-[430px] absolute bottom-0 left-4 translate-y-[18%] z-[-1]">
+            <Image src={"/mobBreadLeave.png"} alt="banner" fill />{" "}
           </div>
-          <div className="w-full mx-auto proza-italic text-[#7B695A] text-[16px] mb-10">
-            <span className="opacity-0">fffffff</span> Avocado oil retains its
-            flavor and freshness longer thanks to natural antioxidants.
+          <div className="w-[90%] mx-auto proza text-[#7B695A] text-[18px] mb-10">
+            <div className="w-full text-[24px] playfair-italic text-[#3C210E] uppercase mb-2">
+              Fact
+            </div>
+            <div className="w-full mx-auto proza-italic text-[#7B695A] text-[16px] mb-10">
+              <span className="opacity-0">fffffff</span> Avocado oil retains its
+              flavor and freshness longer thanks to natural antioxidants.
+            </div>
           </div>
         </div>
 
@@ -80,7 +85,7 @@ export const NinethPage = () => {
         </div>
 
         <div className="w-[90%] mx-auto mb-10">
-          <div className="w-full proza text-[#7B695A] text-[18px] mb-10">
+          <div className="w-full proza text-[#7B695A] text-[16px] mb-10">
             <span className="opacity-0">fff</span> For us, avocado oil is more
             than just a product. It is a story of the land, of the people who
             work on it, and of the fruit-bearing trees we nurture with care.
@@ -89,6 +94,9 @@ export const NinethPage = () => {
         </div>
 
         <div className="w-full mx-auto h-[554px] relative mb-10">
+          <div className="w-full w-full h-[554px] absolute bottom-0 z-[-1] translate-y-[41%]">
+            <Image src={"/mobGardenBranch.png"} alt="banner" fill />{" "}
+          </div>
           <Image src={"/mobGarden.png"} alt="banner" fill />{" "}
         </div>
       </div>

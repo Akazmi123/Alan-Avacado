@@ -50,9 +50,17 @@ export const EighthPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile view */}
       <div className="w-full xs:hidden block">
-        <div className="bg-[#CADBB7] w-[80%] h-[320px] flex justify-start items-end pl-10 pb-4 mb-10">
-          <div className="w-[70%] text-[36px] playfair-italic text-[#3C210E]">
+        <div className="bg-[#CADBB7] w-[80%] h-[320px] flex justify-start items-end pl-10 pb-4 mb-10 relative">
+          <div className="w-[90%] h-[200px] absolute mb-10 top-0 right-0 translate-x-[30%] -translate-y-[35%]">
+            <Image src={"/vegSplash.png"} alt="banner" fill />{" "}
+          </div>
+          <div className="w-[70%] h-[260px] absolute mb-10 bottom-0 right-0 translate-x-[50%] translate-y-[65%] z-[-1]">
+            <Image src={"/mobTulip.png"} alt="banner" fill />{" "}
+          </div>
+          <div className="w-[70%] text-[34px] playfair-italic text-[#3C210E]">
             Quality <br />
             Control and <br />
             Attention to <br />
@@ -67,7 +75,7 @@ export const EighthPage = () => {
             />
           </div>
         </div>
-        <div className="w-[90%] mx-auto proza text-[#7B695A] text-[18px] mb-10">
+        <div className="w-[90%] mx-auto proza text-[#7B695A] text-[16px] mb-10">
           <span className="opacity-0">fff</span> The finished product is
           universal: you can use it for salads, frying eggs and vegetables,
           marinades, and even baking. It’s not only healthy but also convenient

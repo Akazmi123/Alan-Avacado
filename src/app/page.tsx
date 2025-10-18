@@ -173,7 +173,7 @@ export default function Home() {
     <>
       <div
         ref={containerRef}
-        className="xs:flex w-[100vw] h-[100vh] xs:overflow-x-auto overflow-x-hidden xs:overflow-y-hidden snap-x snap-mandatory scroll-smooth"
+        className="xs:flex w-[100vw] xs:h-[100vh] xs:overflow-x-auto overflow-x-hidden xs:overflow-y-hidden snap-x snap-mandatory scroll-smooth"
         tabIndex={0}
         aria-label="Horizontal sections container"
       >

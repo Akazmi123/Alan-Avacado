@@ -64,14 +64,19 @@ export const SixthPage = () => {
 
       {/* Mobile view */}
       <div className="w-full xs:hidden block">
-        <div className="w-[50%] ml-[16px] mb-4">
-          <div className="w-full text-[24px] playfair-italic text-[#3C210E] uppercase mb-2">
-            Fact
+        <div className="w-full mb-4 relative">
+          <div className="w-[70%] h-[391px] absolute right-0 top-0 -translate-y-1/2 z-[-2]">
+            <Image src={"/factLeaves.png"} alt="banner" fill />
           </div>
-          <div className="w-full text-[16px] proza-italic text-[#7B695A]">
-            {" "}
-            <span className="opacity-0">fffffff</span> A high smoke point
-            (around 260°C / 500°F) makes it one of the best oils for frying.
+          <div className="w-[50%] ml-[16px]">
+            <div className="w-full text-[24px] playfair-italic text-[#3C210E] uppercase mb-2">
+              Fact
+            </div>
+            <div className="w-full text-[16px] proza-italic text-[#7B695A]">
+              {" "}
+              <span className="opacity-0">fffffff</span> A high smoke point
+              (around 260°C / 500°F) makes it one of the best oils for frying.
+            </div>
           </div>
         </div>
         <div className="relative h-[401px] w-full mb-4">
@@ -107,14 +112,14 @@ export const SixthPage = () => {
           </div>
         </div>
         <div className="w-[90%] mx-auto proza text-[#7B695A] text-[16px] mb-10">
-          <span className="opacity-0">ffff</span> Every batch of oil is
-          tested for acidity, freshness, and flavor. We do this to ensure that
-          every bottle meets international Extra Virgin standards. For us, it’s
-          not just about producing oil — it’s about creating a product you can
+          <span className="opacity-0">ffff</span> Every batch of oil is tested
+          for acidity, freshness, and flavor. We do this to ensure that every
+          bottle meets international Extra Virgin standards. For us, it’s not
+          just about producing oil — it’s about creating a product you can
           trust. <br />
-          <span className="opacity-0">ffff</span> We are proud that our
-          entire team is involved in the process — from farmers who harvest the
-          crop to technologists who oversee the pressing.
+          <span className="opacity-0">ffff</span> We are proud that our entire
+          team is involved in the process — from farmers who harvest the crop to
+          technologists who oversee the pressing.
         </div>
       </div>
     </>

@@ -72,10 +72,13 @@ export const FifthPage = () => {
 
       {/* Mobile view */}
       <div className="w-full xs:hidden block">
-        <div className="w-[90%] h-[388px] mx-auto mb-10 relative">
+        <div className="w-[90%] h-[388px] mx-auto mb-4 relative">
+          <div className="absolute right-0 bottom-0 translate-x-8 translate-y-[70%] z-[-1] w-[35%] h-[250px]">
+            <Image src={"/mobBoLeave.png"} alt="banner" fill />
+          </div>
           <Image src={"/oilImage.png"} alt="banner" fill />
         </div>
-        <div className="w-[70%] xs:ml-0 ml-[20px] xs:w-[20vw] mb-6 mt-4 xs:mt-0">
+        <div className="w-[80%] ml-[20px] mb-20 mt-4">
           <div className="w-full text-[24px] mb-4 playfair-italic text-[#3C210E] uppercase">
             Interesting
           </div>
@@ -84,7 +87,7 @@ export const FifthPage = () => {
             vitamin E and natural antioxidants that support cellular health.
           </div>
         </div>
-        <div className="bg-[#CADBB7] px-4 w-[80%] h-[450px] mt-10 flex justify-center items-start mb-10">
+        <div className="bg-[#CADBB7] px-4 w-[85%] h-[450px] mt-10 flex justify-center items-start mb-6 relative">
           <div className="w-full h-full relative">
             <div className="w-full pt-4 xs:pt-15 text-[42px] xs:text-[8vh] playfair-italic text-[#3C210E]">
               Color and <br />
@@ -100,20 +103,9 @@ export const FifthPage = () => {
               color="#86796F"
               className="mb-[10px] xs:mb-[0px]"
             />
-            <div className="w-[500px] h-[65%] absolute bottom-0 rigth-0 xs:right-10 xs:translate-x-3/4 xs:z-[-1]">
-              <Image
-                src={"/oilBottle.svg"}
-                alt="banner"
-                fill
-                className="xs:iniline hidden"
-              />{" "}
-              <Image
-                src={"/avacadoBottle.svg"}
-                alt="banner"
-                fill
-                className="xs:hidden iniline"
-              />{" "}
-            </div>
+          </div>
+          <div className="w-full h-[250px] absolute bottom-0 right-0 translate-x-[30%]">
+            <Image src={"/avacadoBottle.svg"} alt="banner" fill />
           </div>
         </div>
         <div className="w-[90%] mx-auto text-[16px] text-[#7B695A] proza mb-20">

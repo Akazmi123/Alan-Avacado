@@ -71,7 +71,10 @@ export const SecondPage = () => {
 
       {/* Mobile view */}
       <div className="w-full xs:hidden block">
-        <div className="bg-[#E5F0F3] w-[80%]">
+        <div className="bg-[#E5F0F3] w-[80%] relative">
+          <div className="absolute right-0 bottom-0 translate-x-[40%] translate-y-[10%] h-[206px] w-[60%]">
+            <Image src={"/mobLeave.png"} alt="banner" fill />
+          </div>
           <div className="playfair-italic text-[34px] text-[#3C210E] p-6">
             A Home <br />
             Among the

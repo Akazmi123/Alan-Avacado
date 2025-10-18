@@ -61,11 +61,17 @@ export const TenthPage = () => {
           <Image src={"/mobTrees.png"} alt="banner" fill />
         </div>
         <div className="relative w-full h-[382px] mb-30">
+          <div className="w-[80%] h-[470px] absolute right-0 bottom-0 z-[-1] translate-y-[60%]">
+            <Image src={"/mobProd.png"} alt="banner" fill />{" "}
+          </div>
           <Image src={"/mobRoad.png"} alt="banner" fill />
         </div>
-        <div className="w-full flex justify-end items-center mb-30">
-          <div className="bg-[#CADBB7] w-[90%] flex justify-end items-center py-[40px]">
-            <div className="w-[70%] text-[40px] playfair-italic text-[#3C210E]">
+        <div className="w-full flex justify-end items-center mb-30 relative">
+          <div className="w-[80%] h-[300px] absolute left-0 bottom-0 z-[-1] translate-y-[48%]">
+            <Image src={"/mobProd2.png"} alt="banner" fill />{" "}
+          </div>
+          <div className="bg-[#CADBB7] w-[80%] flex justify-end items-center py-[20px]">
+            <div className="w-[70%] text-[34px] playfair-italic text-[#3C210E]">
               Our Products <br />
               That We Are <br />
               Proud of
@@ -75,7 +81,7 @@ export const TenthPage = () => {
                 width={80}
                 height={40}
                 color="#86796F"
-                className="mt-[10px]"
+                className="mt-[10px] py-[20px]"
               />
             </div>
           </div>

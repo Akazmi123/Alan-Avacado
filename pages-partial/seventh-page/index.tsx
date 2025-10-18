@@ -53,33 +53,34 @@ export const SeventhPage = () => {
 
       {/* Mobile view */}
       <div className="w-full xs:hidden block">
-        <div className="relative w-full h-[302px] mb-10">
+        <div className="relative w-full h-[302px] mb-6">
+          <div className="absolute w-[50%] h-[250px] bottom-0 right-0 translate-y-[70%] z-[-2]">
+            <Image src={"/mobLeaf.png"} alt="banner" fill />
+          </div>
           <Image src={"/mobScent.png"} alt="banner" fill />
         </div>
-        <div className="w-[80%] ml-[16px] mb-14">
-          {" "}
+        <div className="w-[60%] ml-[16px] mb-14">
           <div className="w-full text-[24px] playfair-italic text-[#3C210E] uppercase mb-2">
             Fact
           </div>
-          <div className="w-full text-[16px] proza-italic text-[#7B695A]">
-            {" "}
+          <div className="w-full text-[14px] proza-italic text-[#7B695A]">
             <span className="opacity-0">fffffff</span> The oil is bottled
             directly at the production site, ensuring maximum freshness.
           </div>
         </div>
 
-        <div className="relative w-[90%] mx-auto h-[236px] mb-10">
+        <div className="relative w-[90%] mx-auto h-[236px] mb-6">
           <Image src={"/checkOil.png"} alt="banner" fill />
         </div>
-        <div className="w-[90%] ml-[16px] mb-14">
+        <div className="w-[90%] ml-[16px] mb-24">
           <div className="w-full text-[24px] playfair-italic text-[#3C210E] uppercase mb-2">
             quality
           </div>
-          <div className="w-full text-[16px] proza-italic text-[#7B695A]">
+          <div className="w-full text-[14px] proza-italic text-[#7B695A]">
             {" "}
             <span className="opacity-0">fffffff</span> While others offer only
             300mg of plant sterols per 100ml, we provide a powerful 438mg per
-            100ml. <br /> <br />
+            100ml. <br />
             <span className="opacity-0">fffffff</span>While others offer only
             300mg of plant sterols per 100ml, we provide a powerful 438mg per
             100ml.

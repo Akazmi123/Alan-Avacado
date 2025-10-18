@@ -89,7 +89,7 @@ export const TewelvethPage = () => {
         <div className="w-full h-[352px] relative mb-10">
           <Image src={"/mobBottles.png"} alt="banner" fill />
         </div>
-        <div className="w-[80%] ml-[16px] mb-10">
+        <div className="w-[80%] ml-[16px] mb-20">
           <div className="w-full text-[24px] playfair-italic text-[#3C210E] uppercase mb-2">
             Interesting
           </div>

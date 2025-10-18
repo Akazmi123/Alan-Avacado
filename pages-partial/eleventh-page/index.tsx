@@ -10,7 +10,7 @@ export const EleventhPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <>
-      <div className="w-full h-[100vh] relative flex justify-center items-center gap-10 xs:block hidden">
+      <div className="w-full h-[100vh] relative justify-center items-center gap-10 xs:flex  hidden">
         <div className="w-[70vw]">
           {[1, 2, 3].map((_, index) => (
             <div

@@ -65,10 +65,17 @@ export const HomePage = () => {
         <div className="xs:static absolute left-6 bottom-[15vh] w-full flex justify-start items-center xs:mb-[-40px]">
           <Image src={"/badge.svg"} alt="banner" width={image} height={image} />
         </div>
-        <div className="xs:flex hidden justify-center items-center gap-5 pb-10 text-[#3C210E]">
+        <div className="xs:flex hidden justify-center items-center gap-5 pb-10 text-[#3C210E] relative">
           <div>Main</div>
           <div className="opacity-[0.5]">Our Home Amid the Forests</div>
           <div className="opacity-[0.5]">Second Chance for the Fruit</div>
+          <div
+            className="w-full h-[30px] absolute right-0 top-0"
+            style={{
+              background:
+                "linear-gradient(270deg, #ffffffff 0%, rgba(255, 255, 255, 0) 65.08%)",
+            }}
+          ></div>
         </div>
       </div>
     </>

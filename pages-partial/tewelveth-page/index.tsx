@@ -23,6 +23,14 @@ export const TewelvethPage = () => {
               Packaging <br />
               Designed
               <br /> with Care
+              <Image
+                src={"/line.svg"}
+                alt="banner"
+                width={60}
+                height={20}
+                color="#86796F"
+                className="pt-[10px]"
+              />
             </div>
           </div>
         </div>

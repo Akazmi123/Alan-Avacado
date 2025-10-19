@@ -25,6 +25,14 @@ export const SecondPage = () => {
             Among the
             <br />
             Forests
+            <Image
+              src={"/line.svg"}
+              alt="banner"
+              width={60}
+              height={20}
+              color="#86796F"
+              className="mb-[10px] xs:mb-[0px]"
+            />
           </div>
           <div className="xs:w-[50%] w-[90%] xs:m-0 m-auto mt-8 xs:mt-0 text-[#7B695A]">
             <span className="opacity-0">ffffff</span>Our journey begins in
@@ -38,7 +46,7 @@ export const SecondPage = () => {
         </div>
         <div className="xs:w-[70%] w-full absolute xs:bottom-0 bottom-auto left-[50%] -translate-x-1/2 flex xs:flex-row flex-col justify-center items-start xs:gap-4 gap-0">
           <div className="relative xs:m-0 mt-10 mx-auto">
-            <div className="w-[30vw] h-[40vh] xs:block hidden">
+            <div className="w-[40vw] h-[50vh] xs:block hidden">
               <Image src={"/viewLarge.png"} alt="banner" fill />
             </div>
             <Image

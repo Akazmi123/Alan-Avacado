@@ -53,11 +53,19 @@ export const FourthPage = () => {
           </div>
         </div>
         <div className="bg-[#E5F0F3] w-[30%] h-[55vh] absolute top-0 left-[45%] -translate-x-1/2 flex justify-center items-center">
-          <div className="w-full px-10 text-[4vw] playfair-italic text-[#3C210E]">
+          <div className="w-full pl-20 text-[3vw] playfair-italic text-[#3C210E]">
             Cold <br />
             Pressing: <br />
             The Art of <br />
             Care
+            <Image
+              src={"/line.svg"}
+              alt="banner"
+              width={60}
+              height={20}
+              color="#86796F"
+              className="pb-[20px]"
+            />
           </div>
         </div>
         <div className="absolute bottom-0 left-[2vw] z-[-1] w-[30vw] h-[50vh]">

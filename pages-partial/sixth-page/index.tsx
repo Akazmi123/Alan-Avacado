@@ -42,11 +42,19 @@ export const SixthPage = () => {
           </div>
         </div>
         <div className="bg-[#E5F0F3] w-[25%] h-[55vh] absolute top-0 right-10 flex justify-center items-center">
-          <div className="w-[50%] m-auto mb-[40px] text-[6vh] playfair-italic text-[#3C210E]">
+          <div className="w-[60%] m-auto mb-[90px] text-[6vh] playfair-italic text-[#3C210E] leading-[1]">
             Quality <br />
             Control <br />
             and <br /> Attention to <br />
             Detail
+            <Image
+              src={"/line.svg"}
+              alt="banner"
+              width={60}
+              height={20}
+              color="#86796F"
+              className="mt-[10px]"
+            />
           </div>
         </div>
 

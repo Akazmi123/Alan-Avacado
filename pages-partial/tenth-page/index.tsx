@@ -5,8 +5,16 @@ export const TenthPage = () => {
     <>
       <div className="w-full h-[100vh] relative xs:block hidden">
         <div className="bg-[#CADBB7] w-[24vw] h-[60vh] absolute right-50 bottom-0 z-[5]">
-          <div className="w-full h-full relative flex justify-center items-end">
-            <div className="text-[7vh] playfair-italic text-[#3C210E] pb-10">
+          <div className="w-full h-full relative flex justify-center items-start">
+            <div className="text-[5vh] playfair-italic text-[#3C210E] pb-10">
+              <Image
+                src={"/line.svg"}
+                alt="banner"
+                width={60}
+                height={20}
+                color="#86796F"
+                className="pt-[30px]"
+              />
               Our <br />
               Products <br />
               That We are <br />

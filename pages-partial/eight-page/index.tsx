@@ -27,6 +27,14 @@ export const EighthPage = () => {
             </div>
 
             <div className="w-full px-10 text-[5vw] playfair-italic text-[#3C210E] ">
+              <Image
+                src={"/line.svg"}
+                alt="banner"
+                width={60}
+                height={20}
+                color="#86796F"
+                className="mt-[60px]"
+              />
               Oil for <br />
               Every
               <br /> Kitchen

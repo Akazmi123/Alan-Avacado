@@ -12,6 +12,14 @@ export const NinethPage = () => {
             From <br />
             Nature to <br />
             Your Story
+            <Image
+              src={"/line.svg"}
+              alt="banner"
+              width={60}
+              height={20}
+              color="#86796F"
+              className="mb-[10px] mt-[10px]"
+            />
           </div>
         </div>
         <div className="w-[50vh] mt-[40px] text-[12px] proza text-[#7B695A] absolute top-[8vh] right-[2vw]">

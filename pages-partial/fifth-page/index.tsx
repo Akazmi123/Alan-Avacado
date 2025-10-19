@@ -23,7 +23,7 @@ export const FifthPage = () => {
         </div>
         <div className="bg-[#CADBB7] px-4 xs:px-10 w-[80%] xs:w-[25%] h-[450px] xs:h-[80vh] xs:mt-0 mt-10 absolute xs:bottom-0 left-0 xs:left-[50%] xs:-translate-x-1/2 flex justify-center items-start">
           <div className="w-full h-full relative">
-            <div className="w-full pt-4 xs:pt-15 text-[42px] xs:text-[8vh] playfair-italic text-[#3C210E]">
+            <div className="w-full pt-4 xs:pt-15 text-[42px] xs:text-[3vw] playfair-italic text-[#3C210E]">
               Color and <br />
               Flavor That <br />
               Speak for

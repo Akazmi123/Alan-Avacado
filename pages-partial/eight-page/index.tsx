@@ -26,7 +26,7 @@ export const EighthPage = () => {
               <Image src={"/vegSplash.png"} alt="banner" fill />{" "}
             </div>
 
-            <div className="w-full px-10 text-[5vw] playfair-italic text-[#3C210E] ">
+            <div className="w-full px-10 text-[4vw] playfair-italic text-[#3C210E] ">
               <Image
                 src={"/line.svg"}
                 alt="banner"

@@ -21,7 +21,7 @@ export const HomePage = () => {
           <div className="text-[#3C210E] text-[3vw] xs:text-[18px]">
             Southern Forests <br /> Food Technology
           </div>
-          <div className="text-[#3C210E] text-[3vw] xs:text-[18px] rounded-[100px] px-5 py-1 xs:border-none border border-[#3C210E] rounded-full">
+          <div className="text-[#3C210E] text-[3vw] xs:text-[18px] px-5 py-1 border border-[#3C210E] rounded-full">
             Contact Us
           </div>
         </div>

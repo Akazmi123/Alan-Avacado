@@ -30,9 +30,9 @@ export default function Home() {
       if (isTrackpadLike) return; // let native horizontal scrolling happen
 
       e.preventDefault();
-      const scrollAmount = e.deltaY;
+      const scrollAmount = e.deltaY * 0.2;
       try {
-        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        container.scrollBy({ left: scrollAmount });
       } catch {
         // Fallback for older browsers
         container.scrollLeft += scrollAmount;
@@ -53,9 +53,9 @@ export default function Home() {
       if (isTrackpadLike) return; // allow native horizontal
 
       e.preventDefault();
-      const scrollAmount = e.deltaY;
+      const scrollAmount = e.deltaY * 0.2;
       try {
-        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        container.scrollBy({ left: scrollAmount });
       } catch {
         container.scrollLeft += scrollAmount;
       }
@@ -75,14 +75,14 @@ export default function Home() {
       }
 
       const viewWidth = container.clientWidth || window.innerWidth;
-      const pageDelta = Math.max(1, Math.round(viewWidth * 0.9));
+      const pageDelta = Math.round(viewWidth * 0.2);
 
       switch (e.key) {
         case "ArrowRight":
         case "ArrowDown": {
           e.preventDefault();
           try {
-            container.scrollBy({ left: pageDelta, behavior: "smooth" });
+            container.scrollBy({ left: pageDelta });
           } catch {
             container.scrollLeft += pageDelta;
           }
@@ -92,7 +92,7 @@ export default function Home() {
         case "ArrowUp": {
           e.preventDefault();
           try {
-            container.scrollBy({ left: -pageDelta, behavior: "smooth" });
+            container.scrollBy({ left: -pageDelta });
           } catch {
             container.scrollLeft -= pageDelta;
           }
@@ -101,7 +101,7 @@ export default function Home() {
         case "PageDown": {
           e.preventDefault();
           try {
-            container.scrollBy({ left: viewWidth, behavior: "smooth" });
+            container.scrollBy({ left: viewWidth });
           } catch {
             container.scrollLeft += viewWidth;
           }
@@ -110,7 +110,7 @@ export default function Home() {
         case "PageUp": {
           e.preventDefault();
           try {
-            container.scrollBy({ left: -viewWidth, behavior: "smooth" });
+            container.scrollBy({ left: -viewWidth });
           } catch {
             container.scrollLeft -= viewWidth;
           }
@@ -119,7 +119,7 @@ export default function Home() {
         case "Home": {
           e.preventDefault();
           try {
-            container.scrollTo({ left: 0, behavior: "smooth" });
+            container.scrollTo({ left: 0 });
           } catch {
             container.scrollLeft = 0;
           }
@@ -129,7 +129,7 @@ export default function Home() {
           e.preventDefault();
           const maxLeft = container.scrollWidth - container.clientWidth;
           try {
-            container.scrollTo({ left: maxLeft, behavior: "smooth" });
+            container.scrollTo({ left: maxLeft });
           } catch {
             container.scrollLeft = maxLeft;
           }
@@ -140,7 +140,7 @@ export default function Home() {
           e.preventDefault();
           const delta = e.shiftKey ? -viewWidth : viewWidth;
           try {
-            container.scrollBy({ left: delta, behavior: "smooth" });
+            container.scrollBy({ left: delta });
           } catch {
             container.scrollLeft += delta;
           }
@@ -173,47 +173,47 @@ export default function Home() {
     <>
       <div
         ref={containerRef}
-        className="xs:flex w-[100vw] xs:h-[100vh] xs:overflow-x-auto overflow-x-hidden xs:overflow-y-hidden snap-x snap-mandatory scroll-smooth"
+        className="xs:flex w-[100vw] xs:h-[100vh] xs:overflow-x-auto overflow-x-hidden xs:overflow-y-hidden"
         tabIndex={0}
         aria-label="Horizontal sections container"
       >
-        <section className="min-w-[100vw] h-[100vh] snap-start">
+        <section className="min-w-[100vw] h-[100vh]">
           <HomePage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <SecondPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <ThirdPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <FourthPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <FifthPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <SixthPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <SeventhPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <EighthPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <NinethPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <TenthPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <EleventhPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <TewelvethPage />
         </section>
-        <section className="min-w-[100vw] xs:h-[100vh] snap-start">
+        <section className="min-w-[100vw] xs:h-[100vh]">
           <ThirtenthPage />
         </section>
       </div>

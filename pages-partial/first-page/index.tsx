@@ -17,7 +17,7 @@ export const HomePage = () => {
         <div className="absolute left-1/2 xs:block hidden top-0 w-[20vh] h-[10vh] -translate-x-1/2">
           <Image src={"/topBanner.svg"} alt="banner" fill />
         </div>
-        <div className="w-full flex justify-between xs:border-none border-b-1 items-center xs:mt-[40px] py-2 px-[5%] xs:px-0">
+        <div className="w-full flex justify-between xs:border-none border-b-1 items-center xs:mt-[10px] py-2 px-[5%] xs:px-0">
           <div className="text-[#3C210E] text-[3vw] xs:text-[18px]">
             Southern Forests <br /> Food Technology
           </div>
